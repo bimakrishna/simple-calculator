@@ -1,0 +1,85 @@
+:root {
+  --primary: #d81e5b;
+  --secondary: #8c38ff;
+  --dark: #131a26;
+  --light: #eee;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.calc {
+  width: 300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(auto, auto);
+  border: 1px groove blue;
+  padding: 20px;
+}
+
+.display {
+  grid-column: 1/5;
+  padding: 20px;
+  text-align: right;
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px;
+  font-size: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+
+.clear {
+  grid-column: 1/4;
+  margin: 10px;
+  border-radius: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: #dff4f4;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #dff4f4;
+  text-align: center;
+  border-radius: 50px;
+  margin: 8px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+.symbol {
+  background-color: #fff7db;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.input {
+  margin: 0 0 50px;
+  text-align: right;
+  grid-column: 1/5;
+  font-family: sans-serif;
+}
+
+input {
+  text-align: right;
+  border: 0;
+  outline: 0;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: grey;
+}
+
+button {
+  border: none;
+}
